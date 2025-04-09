@@ -1,6 +1,6 @@
 import { F } from "@/types/file";
-import { Input, InputField, InputGroup, Label, TextArea } from "./input";
-import { Button } from "./ui/button";
+import { Input, InputField, InputGroup, Label, TextArea } from "../input";
+import { Button } from "../ui/button";
 interface BurdensProps {
   fileData: F;
   setFileData: React.Dispatch<React.SetStateAction<F>>;
@@ -72,7 +72,9 @@ const Burdens = ({ fileData, setFileData }: BurdensProps) => {
               fardos: [
                 ...prevState.fardos,
                 {
-                  id: prevState.fardos[prevState.fardos.length - 1].id + 1,
+                  id: prevState.fardos[prevState.fardos.length - 1]
+                    ? prevState.fardos[prevState.fardos.length - 1].id + 1
+                    : 0,
                   descricao: "",
                   descoberto: false,
                 },

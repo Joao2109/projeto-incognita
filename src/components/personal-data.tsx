@@ -12,7 +12,9 @@ const PersonalData = ({ fileData, setFileData }: PersonalDataProps) => {
         <InputTitle>Dados pessoais</InputTitle>
         <div className="grid grid-flow-col grid-rows-2 grid-cols-2 gap-3 p-2">
           <InputField>
-            <Label className="h-6">Nome</Label>
+            <Label className="h-6 overflow-hidden overflow-ellipsis">
+              Nome
+            </Label>
             <Input
               className="h-8"
               type="text"
@@ -23,7 +25,9 @@ const PersonalData = ({ fileData, setFileData }: PersonalDataProps) => {
             />
           </InputField>
           <InputField>
-            <Label className="h-6">Jogador</Label>
+            <Label className="h-6 overflow-hidden overflow-ellipsis">
+              Jogador
+            </Label>
             <Input
               className="h-8"
               type="text"
@@ -35,7 +39,9 @@ const PersonalData = ({ fileData, setFileData }: PersonalDataProps) => {
           </InputField>
           <InputField>
             <div className="flex">
-              <Label className="h-6 flex-1">Perfil</Label>
+              <Label className="h-6 flex-1 overflow-hidden overflow-ellipsis">
+                Perfil
+              </Label>
               <Input
                 className="w-6 h-6 appearance-none border border-border rounded-md checked:bg-primary"
                 type="checkbox"
@@ -65,7 +71,9 @@ const PersonalData = ({ fileData, setFileData }: PersonalDataProps) => {
           </InputField>
           <InputField>
             <div className="flex">
-              <Label className="h-6 flex-1">Complemento</Label>
+              <Label className="h-6 flex-1 overflow-hidden overflow-ellipsis">
+                Complemento
+              </Label>
               <Input
                 className="w-6 h-6 appearance-none border border-border rounded-md checked:bg-primary"
                 type="checkbox"

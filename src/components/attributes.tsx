@@ -13,7 +13,7 @@ const Attributes = ({ fileData, setFileData }: AttributesProps) => {
       <InputTitle>Atributos</InputTitle>
       <div className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-between gap-2 sm:gap-0 p-2">
         <InputField className="w-16 sm:w-24 md:w-[122px] h-16 sm:h-24 md:h-[122px] aspect-square">
-          <Label className="text-center text-xs sm:text-sm md:text-lg">
+          <Label className="text-center text-xs sm:text-sm md:text-lg overflow-hidden overflow-ellipsis">
             Bravura
           </Label>
           <AttributeInput
@@ -32,7 +32,7 @@ const Attributes = ({ fileData, setFileData }: AttributesProps) => {
           />
         </InputField>
         <InputField className="w-16 sm:w-24 md:w-[122px] h-16 sm:h-24 md:h-[122px] aspect-square">
-          <Label className="text-center text-xs sm:text-sm md:text-lg">
+          <Label className="text-center text-xs sm:text-sm md:text-lg overflow-hidden overflow-ellipsis">
             Magnetismo
           </Label>
           <AttributeInput
@@ -51,7 +51,7 @@ const Attributes = ({ fileData, setFileData }: AttributesProps) => {
           />
         </InputField>
         <InputField className="w-16 sm:w-24 md:w-[122px] h-16 sm:h-24 md:h-[122px] aspect-square">
-          <Label className="text-center text-xs sm:text-sm md:text-lg">
+          <Label className="text-center text-xs sm:text-sm md:text-lg overflow-hidden overflow-ellipsis">
             Intelecto
           </Label>
           <AttributeInput
@@ -70,7 +70,7 @@ const Attributes = ({ fileData, setFileData }: AttributesProps) => {
           />
         </InputField>
         <InputField className="w-16 sm:w-24 md:w-[122px] h-16 sm:h-24 md:h-[122px] aspect-square">
-          <Label className="text-center text-xs sm:text-sm md:text-lg">
+          <Label className="text-center text-xs sm:text-sm md:text-lg overflow-hidden overflow-ellipsis">
             Instinto
           </Label>
           <AttributeInput
@@ -89,7 +89,7 @@ const Attributes = ({ fileData, setFileData }: AttributesProps) => {
           />
         </InputField>
         <InputField className="w-16 sm:w-24 md:w-[122px] h-16 sm:h-24 md:h-[122px] aspect-square">
-          <Label className="text-center text-xs sm:text-sm md:text-lg">
+          <Label className="text-center text-xs sm:text-sm md:text-lg overflow-hidden overflow-ellipsis">
             Controle
           </Label>
           <AttributeInput
